@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.irenical.maven</groupId>
+    <artifactId>parent-executable</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+
+  <packaging>jar</packaging>
+
+  <name>${artifactId} server</name>
+  <description>${artifactId} thrift server</description>
+
+  <properties>
+    <main.class>${package}.Main</main.class>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${package}</groupId>
+      <artifactId>${rootArtifactId}-contract</artifactId>
+      <version>${version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.irenical.thrifty</groupId>
+      <artifactId>thrifty</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.irenical.lifecycle</groupId>
+      <artifactId>lifecycle</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.irenical.jindy</groupId>
+      <artifactId>jindy-commons-impl</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+  </dependencies>
+
+</project>
