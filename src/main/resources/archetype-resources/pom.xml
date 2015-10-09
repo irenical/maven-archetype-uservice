@@ -11,7 +11,6 @@
   <modules>
     <module>${artifactId}-contract</module>
     <module>${artifactId}-server</module>
-    <module>${artifactId}-client</module>
   </modules>
   
 

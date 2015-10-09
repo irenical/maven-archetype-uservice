@@ -23,7 +23,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>${package}</groupId>
+      <groupId>${groupId}</groupId>
       <artifactId>${rootArtifactId}-contract</artifactId>
       <version>${version}</version>
     </dependency>
