@@ -4,6 +4,26 @@
   name="${rootArtifactId}"
   xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <requiredProperties>
+    <requiredProperty key="slf4jBindingGroupId">
+      <defaultValue>ch.qos.logback</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="slf4jBindingArtifactId">
+      <defaultValue>logback-classic</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="slf4jBindingVersion">
+      <defaultValue>1.1.3</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="jindyBindingGroupId">
+      <defaultValue>org.irenical.jindy</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="jindyBindingArtifactId">
+      <defaultValue>jindy-commons-impl</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="jindyBindingVersion">
+      <defaultValue>1.0.0</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
   <modules>
     <module id="${rootArtifactId}-contract" dir="__rootArtifactId__-contract"
       name="${rootArtifactId}-contract">
