@@ -13,7 +13,7 @@ This archetype will generate a working service, with a hello-world-like contract
 Simply call **java -jar target/[yourservice]-server-[version].jar** in the server project folder.
 
 #### Changing configuration
-This will deppend on you jindy binding. The default behaviour is having a configuration file present in **src/main/resources/config.properties** in your server project.
+This will deppend on you jindy binding. The default behaviour reads the configuration file present in **src/main/resources/config.properties** in your server project.
 
 #### Requirements
 You need to have thrift compiler installed in order to build the generated project.
